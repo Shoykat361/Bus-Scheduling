@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".NewScheduleFragment" >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/img" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Bus Name"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:id="@+id/busnameinput"/>
+
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Route"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:textAlignment="center"
+                    android:id="@+id/Fromid"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fromspinershow" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:textAlignment="center"
+                    android:id="@+id/Toid"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tospinershow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depature Date"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:id="@+id/depaturedateid"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/depaturedateshow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="23/22/2022"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Depature time"
+                    android:textAlignment="center"
+                    android:id="@+id/timeid"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/timeshow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="22:56"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioGroup
+                    android:id="@+id/radiugropid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/premimum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingEnd="3dp"
+                        android:text="Premimmuunm" />
+
+                    <RadioButton
+
+                        android:id="@+id/Economy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Economy"
+                        android:paddingEnd="3dp" />
+
+                    <RadioButton
+                        android:id="@+id/standard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Standard"
+                        android:paddingEnd="3dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Bus Image"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/busImageIV"
+                    android:src="@mipmap/ic_launcher"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capture Image"
+                    android:id="@+id/capturebtn"
+                    android:textColor="@color/black"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:id="@+id/savebtn" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
